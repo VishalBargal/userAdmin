@@ -1,0 +1,62 @@
+.login_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images2.alphacoders.com/130/1308322.jpeg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_right {
+  border-radius: 16px;
+  background: linear-gradient(110deg, #f71e1e 20.78%, #ac2020 84.3%);
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 310px;
+}
+
+.login_formm{
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sub-button1 {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  /* background-color: #2a93e8; */
+  /* transition: all 0.2s ease; */
+  margin-top: 5%;
+  margin-inline: auto;
+  background: linear-gradient(180deg, #291ef6 10%, #1f1fab 90%);
+}

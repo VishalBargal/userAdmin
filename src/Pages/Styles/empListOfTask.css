@@ -1,0 +1,310 @@
+.myedit{
+  float: left;
+  margin-left: 10%;
+}
+
+.errorText{
+  color: rgb(220, 5, 5);
+}
+.task-main-div{
+  width: 100%;
+  background: #E7E9F6;
+  min-height: 100vh !important;
+}
+.mainInnerDiv{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.naviCrumbles{
+  width: 80%;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.edit-container{
+  width: 50%;
+}
+.selectTagsSort{
+  border-radius: 15px;
+}
+.button-view{
+color: #FFF;
+border-radius: 16px;
+background: linear-gradient(110deg, #f71e1e 20.78%, #ac2020 84.3%);
+box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+
+border: none;
+cursor: pointer;
+outline: none;
+width: 82px;
+height: 33px;
+
+}
+.editPop1{
+  height: auto !important;
+  top: 37% !important;
+}
+.button-view:hover{
+background: white;
+color: black;
+border: 1.5px solid #981EF7;
+}
+.sortlebel{
+  display: flex;
+  gap: 10px;
+}
+.overlay{
+  width: 100%;
+    z-index: 100;
+    background: transparent;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(5px)
+}
+.edit-popup{
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 2%;
+  border-radius: 15px;
+  z-index: 1000;
+  position: fixed;
+  top: 37%;
+  justify-content: space-evenly;
+  left: 37%;
+  background: linear-gradient(110deg, #f71e1e 20.78%, #ac2020 84.3%);
+  height: auto;
+}
+
+.hoursInpEdit, .reasonInpEdit{
+  width: 216px;
+  height: 39px;
+  background: #ffffff;
+  backdrop-filter: blur(13px);
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgb(84, 84, 84);
+  outline: none;
+}
+.giveReasonDiv, .hoursEditDiv{
+  gap: 10px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+.saveCancelBtn{
+  color: #000000;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 104px;
+  border: 1px solid #ffffff8c;
+}
+.primaryBtn{
+  color: #FFF;
+  border-radius: 16px;
+  background: linear-gradient(110deg, #981EF7 20.78%, #5520AC 84.3%);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 104px;
+}
+.actionpopButtons{
+  display: flex;
+  gap: 25px;
+}
+.EditPoplabel{
+  color: white;
+}
+.editIcon:hover{
+  scale: 1.3;
+}
+.daysTotlhrNum{
+      /* outline: none; */
+      border: none;
+      text-align: center;
+      background: transparent;
+}
+table { 
+    width: 80%; 
+    border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: white; 
+  }
+  th { 
+    background: linear-gradient(180deg, #f61e1e 10%, #ab1f1f 90%) !important;
+
+    color: white; 
+    font-weight: bold; 
+    border: none !important;
+  }
+  td, th { 
+    padding: 6px; 
+    border: 1px solid #2a2a2a; 
+    text-align: center; 
+    white-space: nowrap;       /* Prevent text from wrapping */
+    overflow: hidden;          /* Hide the overflowing content */
+    text-overflow: ellipsis;    
+  }
+  
+  @media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+      /* Force table to not be like tables anymore */
+      table.responsive, .responsive thead, .responsive tbody, .responsive th, .responsive td, .responsive tr { 
+          display: block; 
+      }
+      
+      /* Hide table headers (but not display: none;, for accessibility) */
+      .responsive thead tr { 
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+      }
+      
+      .responsive tr { border: 1px solid #ccc; }
+      
+      .responsive td { 
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #eee; 
+          position: relative;
+          padding-left: 50%; 
+      }
+      
+      .responsive td:before { 
+          /* Now like a table header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          top: 6px;
+          left: 6px;
+          width: 45%; 
+          padding-right: 10px; 
+          white-space: nowrap;
+      }
+      
+      /*
+      Label the data
+      */
+      .responsive td:before { content: attr(data-table-header); }
+      .edit-popup {
+        width: 43%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+        border-radius: 15px;
+        z-index: 1000;
+        position: fixed;
+        top: 45%;
+        left: 28%;
+        background-color: #5b258685;
+    }
+  }
+  
+  .table-responsive .bootstrap {
+    min-height: .01%;
+    overflow-x: auto;
+  }
+  @media screen and (max-width: 767px) {
+    .table-responsive.bootstrap {
+      width: 100%;
+      margin-bottom: 15px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #ddd;
+    }
+    .table-responsive.bootstrap > .table {
+      margin-bottom: 0;
+    }
+    .table-responsive.bootstrap > .table > thead > tr > th,
+    .table-responsive.bootstrap > .table > tbody > tr > th,
+    .table-responsive.bootstrap > .table > tfoot > tr > th,
+    .table-responsive.bootstrap > .table > thead > tr > td,
+    .table-responsive.bootstrap > .table > tbody > tr > td,
+    .table-responsive.bootstrap > .table > tfoot > tr > td {
+      white-space: nowrap;
+    }
+    .table-responsive.bootstrap > .table-bordered {
+      border: 0;
+    }
+    .table-responsive.bootstrap > .table-bordered > thead > tr > th:first-child,
+    .table-responsive.bootstrap > .table-bordered > tbody > tr > th:first-child,
+    .table-responsive.bootstrap > .table-bordered > tfoot > tr > th:first-child,
+    .table-responsive.bootstrap > .table-bordered > thead > tr > td:first-child,
+    .table-responsive.bootstrap > .table-bordered > tbody > tr > td:first-child,
+    .table-responsive.bootstrap > .table-bordered > tfoot > tr > td:first-child {
+      border-left: 0;
+    }
+    .table-responsive.bootstrap > .table-bordered > thead > tr > th:last-child,
+    .table-responsive.bootstrap > .table-bordered > tbody > tr > th:last-child,
+    .table-responsive.bootstrap > .table-bordered > tfoot > tr > th:last-child,
+    .table-responsive.bootstrap > .table-bordered > thead > tr > td:last-child,
+    .table-responsive.bootstrap > .table-bordered > tbody > tr > td:last-child,
+    .table-responsive.bootstrap > .table-bordered > tfoot > tr > td:last-child {
+      border-right: 0;
+    }
+    .table-responsive.bootstrap > .table-bordered > tbody > tr:last-child > th,
+    .table-responsive.bootstrap > .table-bordered > tfoot > tr:last-child > th,
+    .table-responsive.bootstrap > .table-bordered > tbody > tr:last-child > td,
+    .table-responsive.bootstrap > .table-bordered > tfoot > tr:last-child > td {
+      border-bottom: 0;
+    }
+    .naviCrumbles{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .innerNavDiv{
+      width: 100%;
+    }
+    .user-logout-bt{
+      width: 37%;
+    }
+    .edit-popup{
+      width: 60%;
+      left: 15%;
+    }
+  }
+
+ 
+  @media screen and (min-width: 300px) and (max-width: 500px) {
+    .naviCrumbles{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .innerNavDiv{
+      width: 100% !important;
+      flex-direction: column;
+    }
+    .user-logout-bt{
+      width: 37% !important;
+    }
+    table {
+      width: 95%;
+    }
+    .edit-popup{
+      width: 80%;
+      left: 1%;
+    }
+  }
+  /* .tabrow{
+  background: linear-gradient(180deg, #f61e1e 10%, #ab1f1f 90%) !important;
+
+  } */
